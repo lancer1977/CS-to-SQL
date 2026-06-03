@@ -49,6 +49,15 @@ And if you named it something else, it will be:
 
 `https://YOUR_USERNAME_HERE.github.io/REPOSITORY_NAME_HERE/repo/`
 
+## Tags
+
+- cs-to-sql
+- docs
+- sql
+- ui
+- cli
+- generator
+
 # ADVANCED - How to set up for hosting without GitHub Pages
 
 If you want to host your Kodi repo on a different host besides GitHub Pages, simply download this repository as a `.zip`, and unzip it , rather than forking and cloning it. Continue to follow the rest of the setup procedure, except for the setting up of GitHub Pages. The only differences will be in your `addon.xml` file (lines 5-7), as it will need to reference yourhost, rather than GitHub:
