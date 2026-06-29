@@ -83,6 +83,7 @@ After doing so, your file manager source will be:
 ## 📖 Documentation
 Detailed documentation can be found in the following sections:
 - [Docs README](./docs/README.md)
+- [CI artifact workflow](./docs/ci-artifacts.md)
 - [Feature Index](./docs/features/README.md)
 - [Core Capabilities](./docs/features/core-capabilities.md)
 - [Roadmap Index](./docs/roadmaps/README.md)

@@ -1,0 +1,39 @@
+name: Build and publish artifacts
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-bundle:
+    name: Validate source-only repo and upload bundle
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate required files
+        run: |
+          test -f README.md
+          test -d docs
+          test -d repo
+          find repo -type f -name '*.cs' -print -quit | grep -q .
+
+      - name: Create repository bundle
+        run: |
+          mkdir -p artifacts
+          git archive --format=zip --output=artifacts/cs-to-sql-source.zip HEAD
+
+      - name: Upload repository bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: cs-to-sql-source
+          path: artifacts/cs-to-sql-source.zip
+          if-no-files-found: error
