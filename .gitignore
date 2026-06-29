@@ -14,6 +14,7 @@
 bin/
 obj/
 artifacts/
+.devstudio/runtime/
 publish/
 dist/
 build/

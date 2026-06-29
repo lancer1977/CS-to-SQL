@@ -1,5 +1,10 @@
 # CS-to-SQL portfolio roadmap
 
+This local planning file has been migrated. GitHub Issues are the canonical tracker.
+
+Canonical GitHub issue: https://github.com/lancer1977/CS-to-SQL/issues/3
+Original source kind: roadmap
+
 ## Snapshot
 - 90-day evidence: 3 commits, 15 files changed
 - Last signal: `90eae2d`

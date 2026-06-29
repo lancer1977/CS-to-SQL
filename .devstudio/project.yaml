@@ -1,12 +1,19 @@
-name: change-me
-repo_root: change-me
+name: CS-to-SQL
+repo_root: /mnt/data/lancer1977/code/CS-to-SQL
 
-languages: []
-frameworks: []
+languages:
+  - csharp
+  - markdown
+  - yaml
+frameworks:
+  - dotnet
+  - docs
+  - docker
 
 ci:
   build: []
-  test: []
+  test:
+    - bash scripts/validate.sh
 
 devstudio:
   runtime_model: three-agent
