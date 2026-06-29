@@ -5,6 +5,7 @@ Canonical docs entrypoint for CS-to-SQL.
 ## Entry Points
 
 - [Repository README](../README.md)
+- [Validation](./validation.md)
 - [Feature Index](./features/README.md)
 - [Roadmap Index](./roadmaps/README.md)
 

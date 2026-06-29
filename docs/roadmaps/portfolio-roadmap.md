@@ -21,10 +21,10 @@
 - Change risk is mostly in docs, but deployment behavior can still break consumers.
 
 ## V1 (stability)
-- [ ] Add one deterministic docs-to-source consistency check for setup and repo files.
-- [ ] Add a reproducible checklist for hosted-docs configuration and repository examples.
-- [ ] Add versioned notes for example payloads and required repo metadata.
-- [ ] Add release gate for docs changes affecting deploy and hosting.
+- [x] Add one deterministic docs-to-source consistency check for setup and repo files. See `scripts/validate.sh`.
+- [x] Add a reproducible checklist for hosted-docs configuration and repository examples. See `docs/validation.md`.
+- [x] Add versioned notes for example payloads and required repo metadata. The validation baseline is dated in `docs/validation.md`.
+- [x] Add release gate for docs changes affecting deploy and hosting. See `docs/validation.md`.
 
 ## V2 (confidence)
 - [ ] Create a lightweight validation command suite for `repository.example` and generated files.
